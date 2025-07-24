@@ -4,249 +4,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício Bootstrap</title>
-    <!-- www.getbootstrap.com -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
 </head>
 
-<body>
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Restaurante Delivery</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="ms-auto">
-                        <a href="#" class="link-secondary text-decoration-none">Entrar</a>
-                        <a href="#" class="link-secondary text-decoration-none">Registar</a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <div class="container">
-        <!-- Filtros -->
-        <div>
-            <h2 class="text-center mt-2 mb-0">Faça seu Pedido</h2>
-            <form method="get" class="row" action="index.html">
-                <div class="col-md-6 my-2 pe-md-0">
-                    <div class="input-group">
-                        <input type="text" class="form-control" name="texto-busca"
-                            placeholder="Filtro de nome de produto">
-                        <button class="btn btn-primary">
-                            <i class="bi bi-search"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="col-md-6 my-2">
-                    <select class="form-select" name="filtro-tipo" id="">
-                        <option value="0">Todos</option>
-                        <option value="1">Pizza</option>
-                        <option value="2">Suco</option>
-                        <option value="3">Cerveja</option>
-                    </select>
-                </div>
-            </form>
+<body class="container">
+    <nav class="border border-white row">
+        <div class="border border-black d-flex align-items-center p-1 vermelho" aria-label="breadcrumb">
+            <a href="index.html" class="btn vermelho me-2" style="background:none; border:none; padding:0;">
+                <i class="bi bi-house-fill fs-4"></i>
+            </a>
+
+            <ol class="breadcrumb mb-0 vermelho">
+                <li class="breadcrumb-item active fs-5 vermelho " aria-current="page">Home</li>
+            </ol>
         </div>
-        <!-- Tipo 1 -->
-        <div class="border border-dark border-2 rounded mb-4">
-            <!-- Cabeçalho do Tipo -->
-            <div class="row m-2">
-                <div class="col-md-6 p-0">
-                    <h3>Pizza</h3>
-                </div>
-                <div class="col-md-6 p-0">
-                    <select name="" id="" class="form-select">
-                        <option value="">Ordem do sistema</option>
-                    </select>
-                </div>
-            </div>
-            <!-- Item 1 -->
-            <div class="border border-dark border-2 rounded m-2">
+    </nav>
+
+    <main>
+
+        <div class="border border-white d-flex row">
+            <div class="col-md-6">
                 <div class="row">
-                    <div class="col-md-3 my-auto">
-                        <div class="m-2">
-                            <img src="./img/Pizza/pizza-pepperoni.png" class="rounded w-100">
+                    <div class="col-md-6 col-12 border border-black p-0" style="height: 310px;">
+                        <div class="text-center h-75">
+                            <img src="image.gif" alt="placeholdeok?" class="h-100 img-fluid" style="max-width: 100%;">
+                        </div>
+                        <h3 class="text-center">Matheus<br></h3>
+                        <div class="m-2 d-flex justify-content-between align-items-center">
+                            <a href="#" class="me-3 text-dark fs-3 text-decoration-none"><i
+                                    class="bi bi-whatsapp vermelho"></i></a>
+                            <a href="#" class="me-3 text-dark fs-3 text-decoration-none vermelho"><i
+                                    class="bi bi-youtube"></i></a>
+                            <a href="#" class="me-3 text-dark fs-3 text-decoration-none vermelho"><i
+                                    class="bi bi-twitter"></i></a>
+                            <a href="#" class="text-dark fs-3 text-decoration-none vermelho"><i
+                                    class="bi bi-instagram"></i></a>
                         </div>
                     </div>
-                    <div class="col-md-6 my-auto">
-                        <div class="mx-2">
-                            <h4 class="mb-2">Pepperoni</h4>
-                            <div class="my-2"><b>Ingredientes:</b></div>
-                            <div class="mt-2">Pepperoni fatiado, queijo, cebola, pimentão, molho de tomate e orégano
+                    <div class="col-md-6 col-12 border border-black border-start-0 text-center d-flex align-items-center justify-content-center"
+                        style="min-height: 310px;">
+                        Me chamo Matheus Demétrio, estudo no instituto federal de Santa Catarina fazendo informatica pra
+                        a internet, desenho e animo no tempo livre
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6 col-12 border border-dark overflow-auto d-flex"
+                style="height: 310px; white-space: nowrap">
+                <div class="border border-dark p-1">
+                    <h2 class="border border-vermelho text-center vermelho">Css</h2>
+                    <p>Gosto bastante do css ele é uma<br>
+                        linguagem da qual eu mais entendo <br>
+                        e gosto de usar, sinceramente é <br>
+                        muito divertido apenas fazer ids<br>
+                        ou classe para ir vendo o site <br>
+                        ficando bonito ou com vida em <br>
+                        geral, apesar disso tambem o<br>
+                        complexo as vezes mas não tanto<br>
+
+                    </p>
+                </div>
+
+                <div class="border border-dark p-1 ">
+                    <h2 class="border border-vermelho text-center vermelho">html</h2>
+                    <p>esse eu entendo até que bastante mas<br>
+                        acho ele mais chato q o css, e menos<br>
+                        divertido de se usar, mas ainda sim gosto <br>
+                        bastante usar ele afinal ele tambem <br>
+                        é front-end, e eu gosto bastante dessa area <br>
+                        então eu diria que entendo bastante mas<br>
+                        não é o meu foco, afinal como todo o resto <br>
+                        depende dele as vezes é chato <br>
+
+                    </p>
+                </div>
+                <div class="border border-dark p-1">
+                    <h2 class="border border-vermelho text-center vermelho">bootstrap</h2>
+                    <p>esse ainda estou em processo de <br>
+                        aprendizado, mas parece ser bem <br>
+                        interesante afinal ele é basicamente <br>
+                        um css padronizado, oque ajuda bastante <br>
+                        e os trabalhos com ele sempre parecem<br>
+                        formais e bonitos, então é uma area <br>
+                        que pretendo aprender mais e usar <br>
+                        mais para que fique mais facil usar ela <br>
+
+                    </p>
+                </div>
+
+                <div class="border border-dark p-1">
+                    <h2 class="border border-vermelho text-center vermelho">php</h2>
+                    <p>é o unico back-end que entendo, mas <br>
+                        não é tanto asism, entendo o basico <br>
+                        mas para ações simples sei usar ele <br>
+                        perfeitamente, agora quando junta banco <br>
+                        ou logica demais eu ja me perco, e <br>
+                        como back-end não é algo que gosto <br>
+                        muito de fazer não pretendo me <br>
+                        especializar mais nele alem do curso <br>
+
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row">
+            <h2 class="vermelho border-vermelho text-center">Projetos</h2>
+        </div>
+
+        <div class="clearfix row">
+            <div id="carouselProjetos" class="carousel slide p-0" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- Slide 1 -->
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-column flex-md-row" style="height: auto;">
+
+                            <div class="col-md-4 col-12 border border-black estatisticas">
+                                <h4 class="text-center">Linguagens Usadas</h4>
+                                <div class="grafico-container justify-content-center">
+                                    <img src="quantidadeDeLinguagem.png" alt="Gráfico de Linguagens"
+                                        style="height: 180px;">
+                                </div>
                             </div>
+
+                            <div
+                                class="col-md-4 col-12 border border-black estatisticas text-center d-flex flex-column justify-content-center">
+                                <h4><a href="SiteLanchonete.png" class="vermelho">Site da homepage</a></h4>
+                                <p class="px-2">
+                                    Este foi um pequeno trabalho que nossa turma fez, consiste em um site
+                                    simples de uma empresa que a gente "criou"
+                                </p>
+                            </div>
+
+                            <div
+                                class="col-md-4 col-12 border border-black estatisticas d-flex justify-content-center align-items-center">
+                                <img src="seilaBemSeila.gif" alt="Imagem do Projeto"
+                                    style="width: 80%; border: 2px solid black; background-color: rgb(255, 227, 151);">
+                            </div>
+
                         </div>
                     </div>
-                    <div class="col-md-3 m-auto">
-                        <div class="m-2">
-                            <input type="text" class="form-control" value="R$ 50,50" readonly>
-                        </div>
-                        <div class="m-2">
-                            <input type="number" class="form-control" value="1" min="1">
-                        </div>
-                        <div class="m-2">
-                            <button class="btn btn-primary w-100">Adicionar produto</button>
+
+                    <!-- Slide 2 -->
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column flex-md-row" style="height: auto;">
+
+                            <div class="col-md-4 col-12 border border-black estatisticas text-center">
+                                <h4>Linguagens Usadas</h4>
+                                <img src="quantidadeDeLinguagem2.png" alt="Gráfico" style="height: 180px;">
+                            </div>
+
+                            <div
+                                class="col-md-4 col-12 border border-black estatisticas text-center d-flex flex-column justify-content-center">
+                                <h4><a href="IflixscSite.png" class="vermelho">IFlixSC</a></h4>
+                                <p class="px-2">
+                                    Esse foi bem depois da homepage, mais complicado, mas divertido. É um site de
+                                    cadastro de filme.
+                                </p>
+                            </div>
+
+                            <div
+                                class="col-md-4 col-12 border border-black estatisticas d-flex justify-content-center align-items-center">
+                                <img src="IFlixSC.png" alt="Imagem Alternativa"
+                                    style="width: 80%; border: 2px solid black;">
+                            </div>
+
                         </div>
                     </div>
+
                 </div>
-            </div>
-            <!-- Item 2 -->
-            <div class="border border-dark border-2 rounded m-2">
-                <div class="row">
-                    <div class="col-md-3 my-auto">
-                        <div class="m-2">
-                            <img src="./img/Pizza/pizza-bacon.png" class="rounded w-100">
-                        </div>
-                    </div>
-                    <div class="col-md-6 my-auto">
-                        <div class="mx-2">
-                            <h4 class="mb-2">Bacon</h4>
-                            <div class="my-2"><b>Ingredientes:</b></div>
-                            <div class="mt-2">Bacon, queijo e molho de tomate</div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 m-auto">
-                        <div class="m-2">
-                            <input type="text" class="form-control" value="R$ 50,50" readonly>
-                        </div>
-                        <div class="m-2">
-                            <input type="number" class="form-control" value="1" min="1">
-                        </div>
-                        <div class="m-2">
-                            <button class="btn btn-primary w-100">Adicionar produto</button>
-                        </div>
-                    </div>
-                </div>
+
+                <!-- Controles do carrossel -->
+                <button class="carousel-control-prev bg-hover-vermelho" type="button" data-bs-target="#carouselProjetos"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon "></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next bg-hover-vermelho" type="button" data-bs-target="#carouselProjetos"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
             </div>
         </div>
-        <!-- Tipo 2 -->
-        <div class="border border-dark border-2 rounded mb-4">
-            <!-- Cabeçalho do Tipo -->
-            <div class="row m-2">
-                <div class="col-md-6 p-0">
-                    <h3>Suco</h3>
+
+        <div class="border border-white row mb-5">
+            <div class="border border-black p-0">
+                <h2 class="vermelho border-vermelho text-center m-1">Outras informações</h2>
+                <div class="text-center my-4">
+                    <a href="Curriculo.html" class="btn btn-outline-danger btn-vermelho">Curriculo</a>
                 </div>
-                <div class="col-md-6 p-0">
-                    <select name="" id="" class="form-select">
-                        <option value="">Ordem do sistema</option>
-                    </select>
-                </div>
-            </div>
-            <!-- Item 1 -->
-            <div class="border border-dark border-2 rounded m-2">
-                <div class="row">
-                    <div class="col-md-3 my-auto">
-                        <div class="m-2">
-                            <img src="./img/Suco/suco-laranja.png" class="rounded w-100">
-                        </div>
-                    </div>
-                    <div class="col-md-6 my-auto">
-                        <div class="mx-2">
-                            <h4 class="mb-2">Laranja</h4>
-                            <div class="my-2"><b>Ingredientes:</b></div>
-                            <div class="mt-2">Água e laranja</div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 m-auto">
-                        <div class="m-2">
-                            <input type="text" class="form-control" value="R$ 8,00" readonly>
-                        </div>
-                        <div class="m-2">
-                            <input type="number" class="form-control" value="1" min="1">
-                        </div>
-                        <div class="m-2">
-                            <button class="btn btn-primary w-100">Adicionar produto</button>
-                        </div>
-                    </div>
+                <p class="text-center m-2">
+                    Email: matheus.ls2009@aluno.ifsc.edu.br;<br>
+                    Numero: 49 9964 3720; <br>
+                    Twitter de Desenho: che4inho7_H (raramente uso) <br>
+                    algumas Habilidades: Desenho, animação, pragramação,</p>
+                <div class="text-center">
+                    <img src="Dance2.gif" alt="obrigado" style="width: 182px;">
                 </div>
             </div>
+
         </div>
-        <!-- Tipo 3 -->
-        <div class="border border-dark border-2 rounded mb-4">
-            <!-- Cabeçalho do Tipo -->
-            <div class="row m-2">
-                <div class="col-md-6 p-0">
-                    <h3>Cerveja</h3>
-                </div>
-                <div class="col-md-6 p-0">
-                    <select name="" id="" class="form-select">
-                        <option value="">Ordem do sistema</option>
-                    </select>
-                </div>
-            </div>
-            <!-- Item 1 -->
-            <div class="border border-dark border-2 rounded m-2">
-                <div class="row">
-                    <div class="col-md-3 my-auto">
-                        <div class="m-2">
-                            <img src="./img/Cerveja/cerveja-skol-lata.png" class="rounded w-100">
-                        </div>
-                    </div>
-                    <div class="col-md-6 my-auto">
-                        <div class="mx-2">
-                            <h4 class="mb-2">Skol - Lata</h4>
-                            <div class="my-2"><b>Ingredientes:</b></div>
-                            <div class="mt-2">Água, malte, milho e lúpulo. Contém cevada e glúten</div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 m-auto">
-                        <div class="m-2">
-                            <input type="text" class="form-control" value="R$ 8,00" readonly>
-                        </div>
-                        <div class="m-2">
-                            <input type="number" class="form-control" value="1" min="1">
-                        </div>
-                        <div class="m-2">
-                            <button class="btn btn-primary w-100">Adicionar produto</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Carrinho de compras -->
-        <div class="border border-dark border-2 rounded mb-4">
-            <div class="m-2">
-                <h4>Itens do Pedido</h4>
-            </div>
-            <div class="m-2">
-                <table class="table table-hover text-center align-middle m-0">
-                    <tbody>
-                        <tr>
-                            <th>Suco de Laranja</th>
-                            <td>1x</td>
-                            <td>R$ 8,00</td>
-                            <td>
-                                <button class="btn btn-secondary">Editar</button>
-                                <button class="btn btn-danger">Remover</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>Cerveja Skol - Lata</th>
-                            <td>10x</td>
-                            <td>R$ 80,00</td>
-                            <td>
-                                <button class="btn btn-secondary">Editar</button>
-                                <button class="btn btn-danger">Remover</button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="m-2">
-                <button class="btn btn-primary w-100">Próximo</button>
-            </div>
-        </div>
-    </div>
+
+    </main>
 </body>
 
 </html>

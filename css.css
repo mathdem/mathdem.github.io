@@ -1,0 +1,39 @@
+.vermelho {
+  color: rgb(255, 0, 0) !important;
+}
+
+.border-vermelho {
+  border: 1px solid red !important;
+}
+
+.bg-hover-vermelho:hover {
+  background-color: rgba(255, 0, 0, 0.1); /* equivalente ao bg-danger com transparência */
+  transition: background-color 0.1s ease;
+}
+
+.estatisticas {
+  flex: 1;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.carousel-fade .carousel-item.active {
+  opacity: 1;}
+
+.container{
+  max-width: 900px !important;
+  /* width: 900px; */
+}
+.btn-vermelho{
+  color:red !important;
+}
+
+.btn-vermelho:hover{
+  color:white !important;
+  background-color: red !important;
+}
